@@ -1,0 +1,9 @@
+services:
+  cirroskais-www:
+    image: "cirroskais/www"
+    networks:
+      - nginx
+
+networks:
+  nginx:
+    external: true
