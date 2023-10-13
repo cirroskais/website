@@ -1,6 +1,9 @@
 services:
-  cirroskais-www:
-    image: "cirroskais/www"
+  website:
+    env_file: .env
+    build:
+      context: .
+      dockerfile: ./Dockerfile
     networks:
       - nginx
 
